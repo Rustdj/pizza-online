@@ -48,3 +48,30 @@
     line-height: 22px;
     color: #111111;
 }
+.contentWrapper img {
+    position: absolute;
+    cursor: pointer;
+}
+.contentDelivery {
+    position: absolute;
+    right: 40%;
+    top: 47px;
+}
+.contentWrapper {
+    right: 0;
+}
+.contentDelivery img {
+    padding-left: 85px;
+}
+.link {
+    padding-left: 10px;
+}
+.contentDelivery a {
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    text-decoration: none;
+}

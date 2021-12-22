@@ -1,5 +1,6 @@
 import './content.css';
 import watch from '../../img/logo/watch.svg';
+import search from '../../img/logo/search.svg';
 
 
 
@@ -16,6 +17,13 @@ const Content = () => {
                 <div className='contentHeaderTime'>
                     <img src={watch}/>
                     <p>работаем с 10:00 до 00:00</p>
+                </div>
+                <div className='contentWrapper'>
+                    <div className='contentDelivery'>
+                        <a href='#'>Отзывы</a>
+                        <a className='link' href='#'>Доставка и оплата</a>
+                        <img src={search}/>
+                    </div>
                 </div>  
             </div> 
             <hr className='hr' align="center"></hr> 

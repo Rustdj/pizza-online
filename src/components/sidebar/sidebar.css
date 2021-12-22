@@ -24,6 +24,7 @@
     position: absolute;
     height: 30px;
     left: 148px;
+    cursor: pointer;
 
     font-family: DIN Pro;
     font-style: normal;

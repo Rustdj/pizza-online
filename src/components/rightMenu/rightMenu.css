@@ -2,4 +2,104 @@
     grid-area: r;
     background-color: #fff;
     width: 430px;
+    
+    
 }
+.menuCartWrapper {
+    display: grid;
+    grid-template-columns: 290px;
+    grid-template-rows: 140px 223px;
+    justify-content: center;
+    
+    row-gap: 20px;
+    padding-top: 60px;
+    
+}
+.menuCart {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+
+}
+.menuCart p {
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A4ACAD;
+}
+.menuBlockLocation {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+.menuBlockLocation::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FF9846;
+    top: 39%;
+    left: 84.5%;
+}
+.menuBlockLocation img {
+    position: absolute;
+    top: 40.5%;
+    left: 85.2%;
+}
+.menuCart h2 {
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 40px;
+}
+.menuOffer {
+    position: absolute;
+    width: 290px;
+    height: 40px;
+    top: 159px;
+    background: #FF9846;
+    border-radius: 0px 0px 5px 5px;
+    color: #F2F2F2;
+}
+.menuOffer p {
+    font-size: 14px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F2F2F2;
+    padding-left: 30px;
+}
+.text {
+    position: absolute;
+    width: 265px;
+    height: 22px;
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A4ACAD;
+    top: 120px;
+    right: 70px;
+}
+input {
+    position: absolute;
+    left: 77.6%;
+    top: 50%;
+    width: 260px;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    background-color: #F2F2F2;
+    outline-color: #FF9846;
+}
+
+
