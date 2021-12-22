@@ -1,0 +1,5 @@
+.rightMenu {
+    grid-area: r;
+    background-color: #fff;
+    width: 430px;
+}

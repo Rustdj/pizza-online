@@ -1,0 +1,36 @@
+.sidebar {
+    grid-area: s;
+    background-color: #fff;
+    width: 320px;
+    height: 1000px;
+}
+.sidebarLine hr {
+    width: 180px;
+    border: 0.5px solid #A4ACAD;
+    margin-top: 30px;
+}
+.sidebarLogo {
+    text-align: center;
+    padding: 26px 0px 0px 0px;
+}
+.sidebarMenuItems {
+    padding: 31px 0px 0px 0px;
+    display: flex;
+    letter-spacing: 3px;
+    align-items: center;
+    margin-left: 30%;
+}
+.sidebarMenuItems p {
+    position: absolute;
+    height: 30px;
+    left: 148px;
+
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+

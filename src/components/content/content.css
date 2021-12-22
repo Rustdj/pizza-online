@@ -1,0 +1,50 @@
+.content {
+    grid-area: h;
+    background-color: #F2F2F2;
+    width: 100%;  
+}
+.contentHeaderTime {
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+    color: rgba(164, 172, 173, 1);
+}
+.contentHeaderTime p {
+    margin-left: 5px;
+    
+}
+.hr {
+    margin-top: -7px;
+}
+.vl {
+    border-left: 1px solid rgba(164, 172, 173, 1);
+    height: 125px;
+    position: absolute;
+    left: 37%;
+    top: 0px;
+}
+.contentHeader {
+    padding: 0px 0px 0px 18px;
+}
+.contentHeaderBox a {
+    position: absolute;
+    width: 138px;
+    height: 36px;
+    left: 390px;
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+
+    display: flex;
+    text-align: center;
+    color: #FF9846;
+}
+.contentHeaderBox p {
+    margin-left: 57px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+}
