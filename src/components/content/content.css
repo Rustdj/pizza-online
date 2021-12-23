@@ -75,3 +75,35 @@
     color: #000;
     text-decoration: none;
 }
+
+/* Scroll */
+
+.contentScroll {
+    max-width: 650px;
+    
+    margin: auto;
+}
+.items {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+.items div > div {
+    margin-left: 20px;
+}
+.item {
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 250px !important;
+    margin-left: 20px;
+}
+.items {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.items::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
