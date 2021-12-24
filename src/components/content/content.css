@@ -78,6 +78,7 @@
 
 /* Scroll */
 
+/* 
 .contentScroll {
     max-width: 650px;
     
@@ -96,7 +97,9 @@
 .item {
     border-radius: 10px;
     border: 1px solid grey;
-    width: 250px !important;
+    min-width: 750px;
+    height: 450px;
+
     margin-left: 20px;
 }
 .items {
@@ -107,3 +110,6 @@
     width: 0;
     background: transparent;
 }
+ */
+
+ 

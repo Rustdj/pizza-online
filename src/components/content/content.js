@@ -1,90 +1,31 @@
 import './content.css';
 import watch from '../../img/logo/watch.svg';
 import search from '../../img/logo/search.svg';
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState } from 'react';
+import { FaArrowAltCircleLeft } from 'react-icons/fa';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
+import { SliderData } from './sliderData';
 
 
 
-const Content = (props) => {
-    let ref = useRef()
-    const [state, setState] = useState ({
-        isScrolling: false,
-        clientX: 0,
-        scrollX: 0
-    });
 
+const Content = ({slides}) => {
 
-    useEffect(() => {
-         const el = ref.current
-         if(el) {
-             const onWheel = e => {
-                 e.preventDefault()
-                 el.scrollTo({
-                     left: el.scrollLeft + e.deltaY * 5,
-                     behavior: 'smooth'
-                 })
-             }
-             el.addEventListener('wheel', onWheel)
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
 
-             return () => el.removeEventListener('wheel', onWheel)
-         } 
-    }, [])
-
-    const onMouseDown = e => {
-        if (ref && ref.current && !ref.current.contains(e.target)) {
-
-        }
-        e.preventDefault()
-
-        setState ({
-            ...state,
-            isScrolling: true,
-            clientX: e.clientX
-        })
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current + 1)
     }
-    const onMouseUp = e => {
-        if (ref && ref.current && !ref.current.contains(e.target)) {
-            
-        }
-        e.preventDefault()
-
-        setState ({
-            ...state,
-            isScrolling: false,
-        })
-    }
-    const onMouseMove = e => {
-        if (ref && ref.current && !ref.current.contains(e.target)) {
-            
-        } 
-        e.preventDefault()
-
-        const {clientX, scrollX, isScrolling} = state
-
-        if (isScrolling) {
-            ref.current.scrollLeft = scrollX + e.clientX - clientX
-            let sX = scrollX + e.clientX - clientX
-            let cX = e.clientX
-
-            setState({
-                ...state,
-                scrollX: sX,
-                clientX: cX
-            })
-        }
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
-    useEffect(() => {
-        document.addEventListener('mousedown', onMouseDown)
-        document.addEventListener('mouseup', onMouseUp)
-        document.addEventListener('mousemove', onMouseMove)
+    if (!Array.isArray(slides) || slides.length <= 0) {
+        return null;
+    }
 
-        return () => {
-            document.removeEventListener('mousedown', onMouseDown)
-            document.removeEventListener('mouseup', onMouseUp)
-            document.removeEventListener('mousemove', onMouseMove)
-        }
-    })
+    
 
     return (
 
@@ -110,19 +51,24 @@ const Content = (props) => {
             </div> 
             <hr className='hr' align="center"></hr> 
 
-            <div className='contentScroll'>
-                <div 
-                ref={ref}
-                className={props._class}
-                onMouseDown={onmousedown}
-                onMouseUp={onmouseup}
-                onMouseMove={onmousemove}
-                >
-                    {
-                        React.Children.map(props.children, child => React.Children.only(child))
-                    }
-                </div>
-            </div>
+                <section className='slider'>
+                    <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
+                    <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
+                    {SliderData.map((slide, index) => {
+                        return (
+                            <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                                {index === current && (
+                                    <img src={slide.image} alt='sushi image' className='image'/>
+                                )}
+                                
+                            </div>
+                        )
+                        
+                        
+                    })}
+                </section>
+
+            
             
         </div>
     )

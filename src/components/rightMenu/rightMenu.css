@@ -1,12 +1,12 @@
 .rightMenu {
     grid-area: r;
     background-color: #fff;
-    width: 430px;
+    width: 330px;
     
     
 }
 .menuCartWrapper {
-    display: grid;
+    display: none;
     grid-template-columns: 290px;
     grid-template-rows: 140px 223px;
     justify-content: center;
