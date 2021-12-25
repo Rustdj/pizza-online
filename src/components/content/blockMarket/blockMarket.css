@@ -1,0 +1,14 @@
+.blockMarket {
+    margin: 122px 0px 0px 0px;
+}
+.blockMarketItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.itemDouble {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
