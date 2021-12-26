@@ -7,6 +7,8 @@ import './blockMarket/blockMarket.css';
 import BlockMarket from './blockMarket/blockMarket.js';
 import Slider from './slider/slider';
 import SliderFooter from './slider/sliderFooter';
+import { SliderFooterData } from './SliderFooterData.js';
+
 
 
 
@@ -37,7 +39,22 @@ const Content = () => {
 
                     <Slider slides={SliderData}/>
                     <BlockMarket/>  
-                    <SliderFooter karusel={SliderData}/>  
+                    <SliderFooter props={SliderFooterData}/>
+                    <div className='container'>
+                        <SliderFooter _class='SliderFooterData'>
+                                    {
+                                    SliderFooterData.map((v, i) => {
+                                        return (
+                                        <div key={i} className='scrollableItem'>
+                                            <h2>{v.title}</h2>
+                                            <p>{v.text}</p>
+                                        </div>
+                                        )
+                                    })
+                                    }
+                        </SliderFooter>
+                    </div>
+                    
         </div>
     )
 }

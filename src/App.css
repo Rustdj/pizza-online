@@ -16,11 +16,11 @@
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   margin-top: 30px;
 }
-.listItems {
+.SliderFooterData {
   display: flex;
   flex-direction: row;
   padding: 10px;
@@ -29,18 +29,19 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.listItems div > div {
+.SliderFooterData div > div {
   margin-left: 20px;
 }
 .scrollableItem {
   border-radius: 10px;
   border: 1px solid grey;
   min-width: 250px;
+  background-color: bisque;
   height: 100px;
   width: 250px !important;
   margin-left: 20px;
 }
-.listItems::-webkit-scrollbar {
+.SliderFooterData::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
