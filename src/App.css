@@ -15,5 +15,36 @@
   color: rgb(211, 58, 121);
 }
 
+.container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+.listItems {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  cursor: pointer;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.listItems div > div {
+  margin-left: 20px;
+}
+.scrollableItem {
+  border-radius: 10px;
+  border: 1px solid grey;
+  min-width: 250px;
+  height: 100px;
+  width: 250px !important;
+  margin-left: 20px;
+}
+.listItems::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
 
 
