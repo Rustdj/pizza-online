@@ -4,42 +4,12 @@ import './components/content/slider/slider.css';
 import Sidebar from './components/sidebar/sidebar';
 import RightMenu from './components/rightMenu/rightMenu';
 import Content from './components/content/content'; 
-//import Scrollable from './components/content/slider/scrollable';
-//import { listItems } from './components/content/sliderFooterData';
 
 
 
 
 
 function App() {
-
-  // const listItems = [
-  //   {
-  //     image: '',
-  //     title: '',
-  //     text: ''
-  //   },
-  //   {
-  //     image: '',
-  //     title: '',
-  //     text: ''
-  //   },
-  //   {
-  //     image: '',
-  //     title: '',
-  //     text: ''
-  //   },
-  //   {
-  //     image: '',
-  //     title: '',
-  //     text: ''
-  //   },
-  //   {
-  //     image: '',
-  //     title: '',
-  //     text: ''
-  //   }
-  // ]
 
   return (
     <>
@@ -48,8 +18,6 @@ function App() {
           <RightMenu/>
           <Sidebar/>
         </div>
-
-      
     </>
     
   );

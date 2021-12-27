@@ -2,10 +2,6 @@
 import './sliderFooter.css';
 import '../../../App.css';
 import React, { useState, useEffect, useRef } from "react";
-import { FaArrowAltCircleLeft } from 'react-icons/fa';
-import { FaArrowAltCircleRight } from 'react-icons/fa';
-import { SliderData } from '../sliderData.js';
-import { SliderFooterData } from '../SliderFooterData.js';
 
 function SliderFooter(props) {
 
@@ -98,54 +94,8 @@ function SliderFooter(props) {
                     {
                         React.Children.map(props.children, child => React.Children.only(child))
                     }
-
-                    {/* <div className='container'>
-                        <SliderFooter _class='SliderFooterData'>
-                                    {
-                                    SliderFooterData.map((v, i) => {
-                                        return (
-                                        <div key={i} className='scrollableItem'>
-                                            <h2>{v.title}</h2>
-                                            <p>{v.text}</p>
-                                        </div>
-                                        )
-                                    })
-                                    }
-                        </SliderFooter>
-                    </div> */}
         </div>
     )
-
-    // const [current, setCurrent] = useState(0);
-    // const length = karusel.length;
-
-    // const nextSlide = () => {
-    //     setCurrent(current === length - 1 ? 0 : current + 1)
-    // }
-    // const prevSlide = () => {
-    //     setCurrent(current === 0 ? length - 1 : current - 1)
-    // }
-
-    // if (!Array.isArray(karusel) || karusel.length <= 0) {
-    //     return null;
-    // }
-    // return (
-    //     <>
-    //         <section className='slider'>
-    //                 <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-    //                 <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
-    //                 {SliderData.map((slide, index) => {
-    //                     return (
-    //                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
-    //                             {index === current && (
-    //                                 <img src={slide.image} alt='' className='image'/>
-    //                             )}  
-    //                         </div>
-    //                     )  
-    //                 })}
-    //         </section>
-    //     </>
-    // )
 }
 
 export default SliderFooter;
