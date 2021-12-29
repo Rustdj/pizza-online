@@ -1,0 +1,49 @@
+.spoiler {
+    padding: 0px 0px 40px 0px;
+}
+.spoilerText {
+	height: 70px;
+	overflow: hidden;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, #000, #000, rgba(0, 0, 0, 0));
+}
+.spoilerText:after {
+	content: "";
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 1.2em;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
+	pointer-events: none;
+}
+.spoilerOpen {
+    text-align: center;
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    color: #F46D40;
+}
+.spoilerOpen::before,
+.spoilerOpen::after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #F46D40;
+    position: absolute;
+    bottom: -509%;
+    margin-left: 54%;
+}
+.spoilerOpen::before {
+    transform: rotate(40deg);
+    left: 0;
+}
+.spoilerOpen::after {
+    transform: rotate(-40deg);
+    left: 7px;
+}

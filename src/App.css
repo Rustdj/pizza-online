@@ -15,6 +15,10 @@
   color: rgb(211, 58, 121);
 }
 
+
+
+/* Нижняя прокрутка */
+
 .container {
   max-width: 800px;
   margin: auto;

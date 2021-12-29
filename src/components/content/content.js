@@ -8,8 +8,7 @@ import BlockMarket from './blockMarket/blockMarket.js';
 import Slider from './slider/slider';
 import SliderFooter from './slider/sliderFooter';
 import { SliderFooterData } from './SliderFooterData.js';
-import set from '../../img/photo/marketFooter/set.svg';
-import set2 from '../../img/photo/marketFooter/ste2.svg';
+import Spoiler from './spoiler/spoiler';
 
 
 
@@ -59,6 +58,7 @@ const Content = () => {
                                     }
                         </SliderFooter>
                     </div>
+                    <Spoiler/>
                     
         </div>
     )
