@@ -54,6 +54,7 @@
 }
 .read-more-checker:checked ~ .spoilerTextLimited {
     max-height: none;
+    transition: all 0.6s;
 }
 .read-more-checker:checked ~ .spoilerTextLimited .bottom {
     opacity: 0;

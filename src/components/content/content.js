@@ -19,25 +19,26 @@ const Content = () => {
     return (
         <div className='content'>  
                     <div className='contentHeader'>
-                        <div className='contentHeaderBox'>
-                            <p>Наш телефон</p>
-                            <a href="tel:79650033900">+7965 003 39 00</a> <br></br>
-                            <a href="tel:358456670514">+358 45 667 05 14</a>
+                        <div className='contentHeaderWrapper'>
+                                <div className='contentHeaderBox'>
+                                    <h4>Наш телефон</h4>
+                                    <li><a href="tel:79650033900">+7965 003 39 00</a></li>
+                                    <li><a href="tel:358456670514">+358 45 667 05 14</a></li>
+                                    <div className='time'>
+                                        <img src={watch}/>
+                                        <li>работаем с 10:00 до 00:00</li>
+                                    </div>
+                                </div>
+                                <div className='contentWrapper'>
+                                    <div className='contentDelivery'>
+                                    <a href='#'>Отзывы</a>
+                                    <a className='link' href='#'>Доставка и оплата</a>
+                                    <img src={search}/>
+                                </div>
+                            </div>  
                         </div>
-                        <div className='vl'></div>
-                        <div className='contentHeaderTime'>
-                            <img src={watch}/>
-                            <p>работаем с 10:00 до 00:00</p>
-                        </div>
-                        <div className='contentWrapper'>
-                            <div className='contentDelivery'>
-                                <a href='#'>Отзывы</a>
-                                <a className='link' href='#'>Доставка и оплата</a>
-                                <img src={search}/>
-                            </div>
-                        </div>  
                     </div> 
-            <hr className='hr' align="center"></hr>
+            
 
                     <Slider slides={SliderData}/>
                     <BlockMarket/>  
