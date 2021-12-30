@@ -9,6 +9,7 @@ import Slider from './slider/slider';
 import SliderFooter from './slider/sliderFooter';
 import { SliderFooterData } from './SliderFooterData.js';
 import Spoiler from './spoiler/spoiler';
+import Footer from './footer/footer';
 
 
 
@@ -59,6 +60,7 @@ const Content = () => {
                         </SliderFooter>
                     </div>
                     <Spoiler/>
+                    <Footer/>
                     
         </div>
     )
