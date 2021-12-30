@@ -33,9 +33,9 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.SliderFooterData div > div {
+/* .SliderFooterData div > div {
   margin-left: 20px;
-}
+} */
 .scrollableItem {
   border-radius: 10px;
   border: 1px solid grey;

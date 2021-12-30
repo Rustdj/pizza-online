@@ -6,9 +6,10 @@
     
 }
 .menuCartWrapper {
-    display: none;
+    position: relative;
+    display: grid;
     grid-template-columns: 290px;
-    grid-template-rows: 140px 223px;
+    grid-template-rows: repeat(2, 200px);
     justify-content: center;
     
     row-gap: 20px;
@@ -40,13 +41,14 @@
     height: 60px;
     border-radius: 50%;
     background-color: #FF9846;
-    top: 39%;
-    left: 84.5%;
+    top: 77%;
+    left: 42.5%;
 }
 .menuBlockLocation img {
     position: absolute;
-    top: 40.5%;
-    left: 85.2%;
+    top: 79.5%;
+    left: 45.7%;
+    z-index: 3;
 }
 .menuCart h2 {
     font-family: DIN Pro;
@@ -60,7 +62,7 @@
     position: absolute;
     width: 290px;
     height: 40px;
-    top: 159px;
+    top: 220px;
     background: #FF9846;
     border-radius: 0px 0px 5px 5px;
     color: #F2F2F2;
@@ -88,18 +90,18 @@
     text-align: center;
     color: #A4ACAD;
     top: 120px;
-    right: 70px;
+    right: 23px;
 }
-/* input {
+form input {
     position: absolute;
-    left: 77.6%;
-    top: 50%;
+    left: 7.5%;
+    top: 91%;
     width: 260px;
     padding: 10px;
     font-size: 13px;
     border: none;
     background-color: #F2F2F2;
     outline-color: #FF9846;
-} */
+}
 
 

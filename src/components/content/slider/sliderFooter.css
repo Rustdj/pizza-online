@@ -29,3 +29,58 @@
     width: 0;
     background: transparent;
 }
+
+.scrollableBtn {
+    width: 143px;
+    height: 40px;
+    background: #F46D40;
+    border-radius: 5px;
+    border: none;
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #F2F2F2;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.scrollableBtn:hover {
+    background-color: #fff;
+    transition: all 0.6s;
+    color: #F46D40;
+    border: 1px solid #F46D40;
+}
+.scrollableItem h2 {
+    padding: 98px 0px 0px 50px;
+}
+.scrollableItem li {
+    text-align: center;
+    list-style-type: none;
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding-top: 15px;
+    line-height: 22px;
+    align-items: center;
+    color: #A4ACAD;
+}
+
+.scrollableItemBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.scrollableItemBlock::before,
+.scrollableItemBlock::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 249px;
+    top: 16.79%;
+    border: 0.5px solid #A4ACAD;
+}

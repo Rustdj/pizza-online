@@ -87,6 +87,13 @@
     line-height: 100%;
     margin-left: 65px;
 }
+.social {
+    transition: all 0.6s;
+}
+.social:hover {
+    opacity: 0.23;
+    transition: all 0.6s;
+}
 
 .footerAddress {
     display: grid;

@@ -31,8 +31,8 @@ const Content = () => {
                                 </div>
                                 <div className='contentWrapper'>
                                     <div className='contentDelivery'>
-                                    <a href='#'>Отзывы</a>
-                                    <a className='link' href='#'>Доставка и оплата</a>
+                                        <a href='#'>Отзывы</a>
+                                        <a className='link' href='#'>Доставка и оплата</a>
                                     <img src={search}/>
                                 </div>
                             </div>  
@@ -50,10 +50,11 @@ const Content = () => {
                                         <div key={i} className='scrollableItem'>
                                             <img src={v.image}/>
                                             <h2>{v.title}</h2>
-                                            <p>{v.text}</p>
-                                            <p>{v.price}</p>
-                                            <button className='scrollableBtn'>{v.button}</button>
-                                            
+                                            <li>{v.text}</li>
+                                            <div className='scrollableItemBlock'>
+                                                <p>{v.price}</p>
+                                                <button className='scrollableBtn'>{v.button}</button>
+                                            </div>
                                         </div>
                                         )
                                     })
