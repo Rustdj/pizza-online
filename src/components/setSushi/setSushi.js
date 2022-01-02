@@ -1,19 +1,16 @@
 import './setSushi.css';
-import Content from '../content/content.js';
 import Spoiler from '../content/spoiler/spoiler';
 import Footer from '../content/footer/footer';
-
-
-
 import React from 'react'
+import Header from '../content/header/header';
+
 
 const SetSushi = () => {
     return (
         <div>
-            <Content/>
+            <Header/>
             <Spoiler/>
             <Footer/>
-            <SetSushi/>
         </div> 
     )
 }

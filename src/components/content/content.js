@@ -1,6 +1,4 @@
 import './content.css';
-import watch from '../../img/logo/watch.svg';
-import search from '../../img/logo/search.svg';
 import React from 'react';
 import { SliderData } from './sliderData';
 import './blockMarket/blockMarket.css';
@@ -10,7 +8,7 @@ import SliderFooter from './slider/sliderFooter';
 import { SliderFooterData } from './SliderFooterData.js';
 import Spoiler from './spoiler/spoiler';
 import Footer from './footer/footer';
-import SetSushi from '../setSushi/setSushi';
+import Header from './header/header';
 
 
 
@@ -19,7 +17,7 @@ import SetSushi from '../setSushi/setSushi';
 const Content = () => {
     return (
         <div className='content'>  
-                    <div className='contentHeader'>
+                    {/* <div className='contentHeader'>
                         <div className='contentHeaderWrapper'>
                                 <div className='contentHeaderBox'>
                                     <h4>Наш телефон</h4>
@@ -38,9 +36,9 @@ const Content = () => {
                                 </div>
                             </div>  
                         </div>
-                    </div> 
+                    </div>  */}
             
-
+                    <Header/>
                     <Slider slides={SliderData}/>
                     <BlockMarket/>  
                     <div className='container'>
@@ -64,7 +62,6 @@ const Content = () => {
                     </div>
                     <Spoiler/>
                     <Footer/>
-                    <SetSushi/>
                     
         </div>
     )

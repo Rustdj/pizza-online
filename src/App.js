@@ -1,6 +1,7 @@
 import './App.css';
 import './index.css';
 import './components/content/slider/slider.css';
+import { Routes, Route, Router } from 'react-router-dom';
 import Sidebar from './components/sidebar/sidebar';
 import RightMenu from './components/rightMenu/rightMenu';
 import Content from './components/content/content'; 
@@ -15,10 +16,14 @@ function App() {
   return (
     <>
         <div className="wrapper">
-          <Content/>
+          {/* <Content/> */}
+          <Routes>
+                <Route path='/' element={<Content/>} />
+                <Route path='/set' element={<SetSushi/>} />
+          </Routes>
+          
           <RightMenu/>
           <Sidebar/>
-          <SetSushi/>
         </div>
     </>
     

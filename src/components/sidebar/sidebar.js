@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../img/logo/Logo.png';
 import pizza from '../../img/logo/pizza.svg';
 import seti from '../../img/logo/seti.svg';
@@ -17,51 +17,51 @@ const Sidebar = () => {
     return (
         <div className='sidebar'>
             <div className='sidebarLogo'>
-                <img src={logo} alt=''/>
+                <NavLink to='/'><img src={logo} alt=''/></NavLink>
             </div>
             <div className='sidebarLine'>
                 <hr></hr>
             </div>
             <div className='sidebarMenu'>
                     <div className='sidebarMenuItems'>
-                        <div><img src={pizza} alt=''/></div>
-                        <p>Пицца</p>
+                        <div><img src={pizza} alt='pizza'/></div>
+                        <NavLink to='/pizza'>Пицца</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
-                        <div><img src={seti} alt=''/></div>
-                        <p>Сеты</p>
+                        <div><img src={seti} alt='set'/></div>
+                        <NavLink to='/set'>Сеты</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={wok} alt=''/></div>
-                        <p>WOK</p>
+                        <NavLink to='/wok'>WOK</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={roll} alt=''/></div>
-                        <p>Роллы</p>
+                        <NavLink to='/roll'>Роллы</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={sushi} alt=''/></div>
-                        <p>Суши</p>
+                        <NavLink to='/sushi'>Суши</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={salad} alt=''/></div>
-                        <p>Салаты</p>
+                        <NavLink to='/salads'>Салаты</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={soup} alt=''/></div>
-                        <p>Супы</p>
+                        <NavLink to='/soup'>Супы</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={dogs} alt=''/></div>
-                        <p>Корн доги</p>
+                        <NavLink to='/dogs'>Корн доги</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={juice} alt=''/></div>
-                        <p>Напитки</p>
+                        <NavLink to='/juice'>Напитки</NavLink>
                     </div>
                     <div className='sidebarMenuItems'>
                         <div><img src={sales} alt=''/></div>
-                        <p>Акции</p>
+                        <NavLink to='/sales'>Акции</NavLink>
                     </div>
             </div>
                 
