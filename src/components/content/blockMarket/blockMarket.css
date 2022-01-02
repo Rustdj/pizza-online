@@ -11,4 +11,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
+    transition: all .5s;
+}
+.itemDouble a:hover {
+    box-shadow: 2px 2px 35px rgb(53, 52, 50);
+    transition: all .5s;
+}
+.item img {
+    transition: all .5s;
+}
+.item img:hover {
+    box-shadow: 2px 2px 35px rgb(53, 52, 50);
+    transition: all .5s;
 }

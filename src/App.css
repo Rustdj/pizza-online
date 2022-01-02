@@ -38,17 +38,23 @@
 } */
 .scrollableItem {
   border-radius: 10px;
-  border: 1px solid grey;
   min-width: 250px;
-  background-color: bisque;
+  background-color: #fff;
   min-height: 300px;
   width: 250px !important;
   margin-left: 20px;
+  transition: all .5s;
+}
+.scrollableItem:hover {
+  box-shadow: 2px 2px 35px rgb(179, 176, 172);
+  transition: all .5s;
+
 }
 .SliderFooterData::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
+
 
 
 

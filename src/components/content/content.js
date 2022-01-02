@@ -10,6 +10,7 @@ import SliderFooter from './slider/sliderFooter';
 import { SliderFooterData } from './SliderFooterData.js';
 import Spoiler from './spoiler/spoiler';
 import Footer from './footer/footer';
+import SetSushi from '../setSushi/setSushi';
 
 
 
@@ -63,6 +64,7 @@ const Content = () => {
                     </div>
                     <Spoiler/>
                     <Footer/>
+                    <SetSushi/>
                     
         </div>
     )
