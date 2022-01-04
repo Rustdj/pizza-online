@@ -16,7 +16,6 @@ function App() {
   return (
     <>
         <div className="wrapper">
-          {/* <Content/> */}
           <Routes>
                 <Route path='/' element={<Content/>} />
                 <Route path='/set' element={<SetSushi/>} />
