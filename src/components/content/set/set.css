@@ -15,6 +15,10 @@
 .setItem {
     background-color: #fff;
 }
+.setItem img {
+    width: 253px;
+    height: 211px;
+}
 .setItem h4 {
     padding-left: 10px;
 }
@@ -76,11 +80,20 @@
 }
 
 .summ {
+    position: relative;
     font-family: DIN Pro;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    align-items: center;
-    
+    align-items: center;  
+}
+.summ::before,
+.summ:after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 116.21%;
+    border: 0.5px solid #d7ddde;
 }

@@ -6,6 +6,7 @@ import Sidebar from './components/sidebar/sidebar';
 import RightMenu from './components/rightMenu/rightMenu';
 import Content from './components/content/content'; 
 import SetSushi from './components/setSushi/setSushi';
+import Pizza from './components/pizza/pizza';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Routes>
                 <Route path='/' element={<Content/>} />
                 <Route path='/set' element={<SetSushi/>} />
+                <Route path='/pizza' element={<Pizza/>} />
           </Routes>
           
           <RightMenu/>
