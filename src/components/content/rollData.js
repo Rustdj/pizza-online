@@ -30,7 +30,7 @@ const RollData = () => {
         <div className="setWrapper">
             <div className='setName'>
                     <img src={roll} alt='roll'/>
-                    <h2>Роллы и Суши</h2>
+                    <h2>Роллы</h2>
             </div>
             <div className='setItems'>
                     <div className='setItem'>
