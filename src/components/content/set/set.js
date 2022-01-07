@@ -2,7 +2,7 @@ import React from 'react'
 import './set.css';
 import solomon from '../../../img/setImg/solomon.svg';
 import philadelfia from '../../../img/setImg/philadelfia.svg';
-import philadelfiaFish from '../../../img/setImg/philadelfiaFishSet.svg';
+import philadelfiaFish from '../../../img/setImg/philadelfiaFish.jpg';
 import philadelfiaSet from '../../../img/setImg/philadelfiaSet.svg';
 import topSet from '../../../img/setImg/topSet.svg';
 import kamikadze from '../../../img/setImg/kamikadze.svg';

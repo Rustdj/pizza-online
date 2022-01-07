@@ -7,6 +7,8 @@ import RightMenu from './components/rightMenu/rightMenu';
 import Content from './components/content/content'; 
 import SetSushi from './components/setSushi/setSushi';
 import Pizza from './components/pizza/pizza';
+import Wok from './components/wok/wok';
+import Roll from './components/roll/roll';
 
 
 
@@ -21,6 +23,8 @@ function App() {
                 <Route path='/' element={<Content/>} />
                 <Route path='/set' element={<SetSushi/>} />
                 <Route path='/pizza' element={<Pizza/>} />
+                <Route path='/wok' element={<Wok/>} />
+                <Route path='/roll' element={<Roll/>} />
           </Routes>
           
           <RightMenu/>

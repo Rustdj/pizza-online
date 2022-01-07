@@ -19,7 +19,7 @@ const PizzaData = () => {
             <div className='setName'>
                     <img src={logoPizza} alt='pizza'/>
                     <h2>Пицца</h2>
-                </div>
+            </div>
                 <div className='setItems'>
                     <div className='setItem'>
                         <img src={formaggio} alt=''/>
