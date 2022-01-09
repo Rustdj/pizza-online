@@ -15,6 +15,7 @@ import Soup from './components/soup/soup';
 import CornDogs from './components/cornDogs/cornDogs';
 import Juice from './components/juice/juice';
 import Sales from './components/sales/sales';
+import Cart from './components/cart/cart';
 
 
 
@@ -37,6 +38,7 @@ function App() {
                 <Route path='/dogs' element={<CornDogs/>} />
                 <Route path='/juice' element={<Juice/>} />
                 <Route path='/sales' element={<Sales/>} />
+                <Route path='/cart' element={<Cart/>} />
           </Routes>
           
           <RightMenu/>

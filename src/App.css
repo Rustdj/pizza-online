@@ -1,11 +1,10 @@
 .wrapper {
   display: grid;
   margin: 0;
-  /* width: 1414px; */
+  width: 100%;
   grid-template-rows: 140px 1fr;
   grid-template-columns: 0fr 10fr;
   grid-gap: 1px;
-
   grid-template-areas: 
   "s h r"
   "s h r"
@@ -14,9 +13,6 @@
 .active {
   color: rgb(211, 58, 121);
 }
-
-
-
 /* Нижняя прокрутка */
 
 .container {

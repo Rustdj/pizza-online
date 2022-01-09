@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import './set/set.css';
 import fish from '../../img/pizza/fishPizza.svg';
 import formaggio from '../../img/pizza/formaggio.svg';
@@ -9,11 +10,11 @@ import hawai from '../../img/pizza/gawai.svg';
 import petrovskaya from '../../img/pizza/petrovskaya.svg';
 import meatKari from '../../img/pizza/myasnayaKarri.svg';
 import logoPizza from '../../img/logo/pizza.svg';
+import { NavLink } from 'react-router-dom';
 
-
-import React from 'react'
 
 const PizzaData = () => {
+
     return (
         <div className='setWrapper'>
             <div className='setName'>
@@ -27,18 +28,19 @@ const PizzaData = () => {
                         <p>Тесто, соус сливочный</p>
                         <div className='summ'>
                         <div>1500 СОМ</div>
-                        <button>Хочу!</button>
+                        <NavLink to='/cart'><button>Хочу!</button></NavLink>
+                        
+                        </div>
                     </div>
-                </div>
-                <div className='setItem'>
-                    <img src={meatPizza} alt=''/>
-                    <h4>Пицца Кон Формаджио</h4>
-                    <p>Тесто, сливочный соус</p>
-                    <div className='summ'>
-                        <div>1499 СОМ</div>
-                        <button>Хочу!</button>
+                    <div className='setItem'>
+                        <img src={meatPizza} alt=''/>
+                        <h4>Пицца Кон Формаджио</h4>
+                        <p>Тесто, сливочный соус</p>
+                        <div className='summ'>
+                            <div>1499 СОМ</div>
+                            <button>Хочу!</button>
+                        </div>
                     </div>
-                </div>
                 <div className='setItem'>
                     <img src={diablo} alt=''/>
                     <h4>Пицца Мясная</h4>
