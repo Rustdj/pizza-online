@@ -35,3 +35,34 @@
     font-weight: 700;
     font-size: 30px;
 }
+.cartSumm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnCart {
+    background: #F46D40;
+    border-radius: 5px;
+    width: 100px;
+    margin: 30px 0px 0px 0px;
+    font-family: DIN Pro;
+    font-style: normal;
+    border: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    border: 0.5px solid #F46D40;
+    color: #F2F2F2;
+    cursor: pointer;
+    transition: all .5s;
+}
+.btnCart:hover {
+    color: #F46D40;
+    border: 0.5px solid #F46D40;
+    background-color: #F2F2F2;
+    transition: all .5s;
+}
+.price {
+    font-size: 30px;
+    font-weight: 800;
+}
