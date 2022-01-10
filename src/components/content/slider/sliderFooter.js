@@ -93,6 +93,7 @@ function SliderFooter(props) {
                 >
                     {
                         React.Children.map(props.children, child => React.Children.only(child))
+                        
                     }
         </div>
     )

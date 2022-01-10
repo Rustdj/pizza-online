@@ -54,7 +54,7 @@
     border: 1px solid #F46D40;
 }
 .scrollableItem h2 {
-    padding: 98px 0px 0px 50px;
+    padding: 0px 0px 0px 50px;
     font-family: DIN Pro;
     font-style: normal;
     font-weight: 900;
@@ -76,6 +76,9 @@
     line-height: 22px;
     align-items: center;
     color: #A4ACAD;
+}
+.scrollableItem img {
+    width: 100%;
 }
 
 .scrollableItemBlock {
