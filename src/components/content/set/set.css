@@ -7,13 +7,14 @@
 .setItems {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 3fr);
+    grid-template-rows: max-content;
     row-gap: 30px;
     column-gap: 40px;
     padding: 40px 40px 0px 40px;
 }
 .setItem {
     background-color: #fff;
+    border-radius: 10px;
 }
 .setItem img {
     width: 253px;
