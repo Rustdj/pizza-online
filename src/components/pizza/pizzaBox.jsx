@@ -1,9 +1,10 @@
 import React from 'react';
+import '../content/set/set';
 
 
 
 
-const PizzaBox = ({image,title,descr,price,button}) => {
+const PizzaBox = ({image, title, descr, price, button}) => {
 
     return (
         
@@ -22,24 +23,6 @@ const PizzaBox = ({image,title,descr,price,button}) => {
                             <button>{button}</button>
                         </div>
                     </div>
-                <div className='setItem'>
-                    <img src={image} alt='sushi2'/>
-                    <h4>{title}</h4>
-                    <p>{descr}</p>
-                    <div className='summ'>
-                        <div>{price}</div>
-                        <button>{button}</button>
-                    </div>
-                </div>
-                <div className='setItem'>
-                    <img src={image} alt='sushi3'/>
-                    <h4>{title}</h4>
-                    <p>{descr}</p>
-                    <div className='summ'>
-                        <div>{price}</div>
-                        <button>{button}</button>
-                    </div>
-                </div>
              </div>   
         </div>
     )
