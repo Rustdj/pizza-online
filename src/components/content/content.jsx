@@ -19,7 +19,7 @@ const Content = () => {
     return (
         <div className='content'>
             <Header />
-                    <Slider slides={SliderData}/>
+                    <Slider slides={ SliderData }/>
                     <BlockMarket/>  
                     <div className='container'>
                         <SliderFooter _class='SliderFooterData'>

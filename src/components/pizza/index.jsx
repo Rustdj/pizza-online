@@ -1,2 +1,2 @@
-export * from './pizza';
+export * from './pizzaData.jsx';
 
