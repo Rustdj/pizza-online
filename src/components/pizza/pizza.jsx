@@ -2,17 +2,19 @@ import React from 'react';
 import Header from '../content/header/header';
 import Spoiler from '../content/spoiler/spoiler';
 import Footer from '../content/footer/footer';
-import SushiData from '../content/sushiData.js';
+import PizzaData from './pizzaData';
 
-const Sushi = () => {
-    return (
-        <div>
+
+const Pizza = () => {
+    return ( 
+    
+        <div >
             <Header />
-            <SushiData />
+            <PizzaData name='alex' />
             <Spoiler />
             <Footer />
         </div>
     )
 }
 
-export default Sushi
+export default Pizza;

@@ -1,16 +1,16 @@
 import React from 'react'
-import Footer from '../content/footer/footer';
-import Header from '../content/header/header';
 import Spoiler from '../content/spoiler/spoiler';
 import SoupData from '../content/soupData';
+import Header from '../content/header/header';
+import Footer from '../content/footer/footer';
 
 const Soup = () => {
     return (
         <div>
-            <Header />
+            <Header/>
             <SoupData />
             <Spoiler />
-            <Footer />
+            <Footer/>
         </div>
     )
 }

@@ -2,17 +2,18 @@ import React from 'react';
 import Footer from '../content/footer/footer';
 import Header from '../content/header/header';
 import Spoiler from '../content/spoiler/spoiler';
+import JuiceData from '../content/juiceData';
 
 
-const sales = () => {
+const Juice = () => {
     return (
         <div>
-            <Header />
-
+            <Header/>
+            <JuiceData />
             <Spoiler />
-            <Footer />
+            <Footer/>
         </div>
     )
 }
 
-export default sales
+export default Juice

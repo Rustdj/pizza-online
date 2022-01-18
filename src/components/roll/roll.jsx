@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 import Header from '../content/header/header';
 import Spoiler from '../content/spoiler/spoiler';
 import Footer from '../content/footer/footer';
-import SaladsData from '../content/saladsData';
+import RollData from '../content/rollData';
 
-const Salads = () => {
+const Roll = () => {
     return (
         <div>
-            <Header />
-            <SaladsData />
+            <Header/>
+            <RollData />
             <Spoiler />
-            <Footer />
+            <Footer/>
         </div>
     )
 }
 
-export default Salads
+export default Roll;

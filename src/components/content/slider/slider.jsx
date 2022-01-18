@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
-import { SliderData } from '../sliderData.js';
+import { SliderData } from '../sliderData.jsx';
 
 
 

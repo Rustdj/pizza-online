@@ -1,3 +1,8 @@
+.cartWrapper {
+    background-color: #F2F2F2;
+}
+
+
 .cartSection {
     padding: 60px 0px 0px 40px;
 }
@@ -6,7 +11,7 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     column-gap: 40px;
-    padding: 40px 40px 155px 40px;
+    padding: 40px 40px 120px 40px;
 }
 .cartAdd {
     display: flex;
@@ -27,7 +32,7 @@
     transition: all 0.5s;
 }
 .cartAdd button:hover {
-    transform: scale(0.9);
+    transform: scale(0.8);
     transition: all 0.5s;
 }
 .num {
@@ -66,3 +71,132 @@
     font-size: 30px;
     font-weight: 800;
 }
+
+/* Carousel */
+#body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainSliderContainer {
+    position: relative;
+    width: 900px;
+    height: 318px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding-bottom: 80px;
+}
+#slider {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.sliderCard {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    background: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px 2px #00000021;
+}
+
+.sliderButton {
+    position: absolute;
+    right: 10%;
+    bottom: 19px;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    border: none;
+    height: 30px;
+    background: #F46D40;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.sliderButton:hover {
+    transform: scale(0.8);
+    transition: all .5s;
+}
+
+#slider::-webkit-scrollbar {
+    display: none;
+}
+
+.sliderIconLeft {
+    position: absolute;
+    left: 0;
+    background: white;
+    border-radius: 100%;
+    opacity: .5;
+    cursor: pointer;
+    transition: all .3s;
+    box-shadow: 2px 2px 2px 2px #00000021;
+    z-index: 1;
+}
+.sliderIconRight {
+    position: absolute;
+    right: 0;
+    background: white;
+    border-radius: 100%;
+    opacity: .5;
+    cursor: pointer;
+    transition: all .3s;
+    box-shadow: 2px 2px 2px 2px #00000021;
+}
+.sliderIconRight:hover {
+    opacity: 1;
+    transition: all .6s;
+}
+.sliderIconLeft:hover {
+    opacity: 1;
+    transition: all .6s;
+}
+
+.sliderCartImage {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #80808036;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sliderCartTitle, .sliderCartDescr {
+    margin: 5px 0px 5px 10px;
+}
+.sliderCartTitle {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.sliderCartDescr {
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.title {
+    position: absolute;
+    top: -40px;
+    font-family: DIN Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    left: 280px;
+}
+
+.cartBlockIcon {
+    position: absolute;
+    top: 19%;
+    left: 35%;
+}
+
+

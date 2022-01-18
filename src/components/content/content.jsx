@@ -2,22 +2,23 @@ import './content.css';
 import React from 'react';
 import { SliderData } from './sliderData';
 import './blockMarket/blockMarket.css';
-import BlockMarket from './blockMarket/blockMarket.js';
+import BlockMarket from './blockMarket/blockMarket.jsx';
 import Slider from './slider/slider';
 import SliderFooter from './slider/sliderFooter';
-import { SliderFooterData } from './SliderFooterData.js';
+import { SliderFooterData } from './SliderFooterData.jsx';
 import Spoiler from './spoiler/spoiler';
-import Footer from './footer/footer';
 import Header from './header/header';
+import Footer from './footer/footer';
 
 
 
 
 
 const Content = () => {
+
     return (
         <div className='content'>
-                    <Header/>
+            <Header />
                     <Slider slides={SliderData}/>
                     <BlockMarket/>  
                     <div className='container'>
@@ -40,7 +41,8 @@ const Content = () => {
                         </SliderFooter>
                     </div>
                     <Spoiler/>
-                    <Footer/>
+                <Footer/>
+            
                     
         </div>
     )

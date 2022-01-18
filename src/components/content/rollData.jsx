@@ -22,6 +22,7 @@ import roll18 from '../../img/roll/roll18.jpeg';
 import roll19 from '../../img/roll/roll19.jpeg';
 import roll20 from '../../img/roll/roll20.jpeg';
 import roll21 from '../../img/roll/roll21.jpeg';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -39,7 +40,7 @@ const RollData = () => {
                         <p>Свежий лосось, креветки..</p>
                         <div className='summ'>
                         <div>640 ₽</div>
-                        <button>Хочу!</button>
+                        <NavLink to='/cart'><button>Хочу!</button></NavLink>
                     </div>
                 </div>
                 <div className='setItem'>

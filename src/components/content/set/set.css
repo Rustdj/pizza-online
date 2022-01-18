@@ -17,8 +17,10 @@
     border-radius: 10px;
 }
 .setItem img {
-    width: 253px;
+    width: 257px;
     height: 211px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .setItem h4 {
     padding-left: 10px;
@@ -98,3 +100,4 @@
     bottom: 116.21%;
     border: 0.5px solid #d7ddde;
 }
+
