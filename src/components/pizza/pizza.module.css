@@ -1,0 +1,12 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+    row-gap: 30px;
+    column-gap: 40px;
+    padding: 40px 40px 0px 40px;
+}
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+}
