@@ -17,10 +17,13 @@
     border-radius: 10px;
 }
 .setItem img {
-    width: 257px;
-    height: 211px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    width: 240px;
+    height: 200px;
+    border-radius: 30%;
+    background-color: #80808036;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 2%;
 }
 .setItem h4 {
     padding-left: 10px;

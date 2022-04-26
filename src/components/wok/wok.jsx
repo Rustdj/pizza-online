@@ -1,24 +1,18 @@
-import React from 'react'
-import Footer from '../content/footer/footer';
-import Header from '../content/header/header';
-import Spoiler from '../content/spoiler/spoiler';
-import WokData from '../content/wokData.jsx';
+import React from "react";
+import '../content/set/set.css';
 
-const Wok = () => {
-    return (
-        <div>
-            <Header/>
-            <WokData/>
-            <Spoiler/>
-            <Footer/>
-        </div>
-    )
-}
+const Wok = ({ image, title, text, price, button }) => {
+  return (
+    <>
+      <img src={image} alt="set" />
+      <h4>{title}</h4>
+      <p>{text}</p>
+      <div className="summ">
+        <div>{price}</div>
+        <button>{button}</button>
+      </div>
+    </>
+  );
+};
 
-export default Wok
-
-
-
-
-
-
+export default Wok;

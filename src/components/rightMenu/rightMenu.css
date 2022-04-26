@@ -5,6 +5,13 @@
     
     
 }
+.cartBlock {
+    cursor: pointer;
+    position: absolute;
+    left: 96px;
+    top: 31px;
+}
+
 .menuCartWrapper {
     position: relative;
     display: grid;
@@ -17,6 +24,7 @@
     
 }
 .menuCart {
+    position: relative;
     background-color: #F2F2F2;
     border-radius: 5px;
 
@@ -62,7 +70,7 @@
     position: absolute;
     width: 290px;
     height: 40px;
-    top: 220px;
+    top: 160px;
     background: #FF9846;
     border-radius: 0px 0px 5px 5px;
     color: #F2F2F2;

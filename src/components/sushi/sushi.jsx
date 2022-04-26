@@ -2,13 +2,13 @@ import React from 'react';
 import Footer from '../content/footer/footer.jsx';
 import Header from '../content/header/header.jsx';
 import Spoiler from '../content/spoiler/spoiler.jsx';
-import SushiData from '../content/sushiData.jsx';
+import SushiMain from '../sushi/sushiMain';
 
 const Sushi = () => {
     return (
         <div>
             <Header/>
-            <SushiData />
+            <SushiMain />
             <Spoiler />
             <Footer/>
         </div>

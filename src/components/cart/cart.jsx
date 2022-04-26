@@ -1,24 +1,21 @@
-import React from 'react';
-import Header from '../content/header/header';
-import Footer from '../content/footer/footer';
-import CartData from '../content/cartData';
-import SliderFooter from '../content/slider/sliderFooter';
-import '../content/set/set.css';
-import '../content/slider/slider.css';
+import React from "react";
+import Footer from "../content/footer/footer";
+import Header from "../content/header/header";
+import Spoiler from "../content/spoiler/spoiler";
+import classes from "./cart.module.css";
+import CartBox from "./cartBox";
 
-
-
-
-const Cart = () => {
-    return (
-        <div>
-            <Header />
-       
-            <CartData />
-            <SliderFooter/>
-            <Footer />
-        </div>
-    )
+export default function Cart() {
+  return (
+    <>
+      <Header />
+      <div className={classes.name}>
+        <img src="" alt="Cart" />
+        <h2>Корзина</h2>
+      </div>
+      <CartBox />
+      <Cart />
+      <Spoiler />
+    </>
+  );
 }
-
-export default Cart;
