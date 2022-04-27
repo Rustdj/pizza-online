@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './set.css';
 
 export default function Set({ image, title, text, price, button }) {
@@ -9,7 +10,8 @@ export default function Set({ image, title, text, price, button }) {
       <p>{text}</p>
       <div className="summ">
         <div>{price}</div>
-        <button>{button}</button>
+        <Link to="/cart"><button>{button}</button></Link>
+        
       </div>
     </>
   );

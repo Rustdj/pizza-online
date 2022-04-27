@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./pizza.module.css";
 
 const PizzaBox = ({ title, text, price, button, image }) => {
+  const [state, setState] = useState();
+
+  
   return (
     <>
       <img src={image} alt="sushi1" />

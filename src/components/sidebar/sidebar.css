@@ -1,7 +1,7 @@
 .sidebar {
     grid-area: s;
     background-color: #fff;
-    width: 320px;
+    width: 283px;
     height: 1000px;
 }
 .sidebarLine hr {
