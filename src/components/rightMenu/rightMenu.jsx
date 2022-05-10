@@ -1,9 +1,12 @@
 import "./rightMenu.css";
 import location from "../../img/logo/location.svg";
 import { BiCartAlt } from "react-icons/bi";
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
 const RightMenu = () => {
+  const items = useSelector(state => state.cart.itemsInCart)
+  const totalPrice = items.reduce((acc, item) =>  acc += item.price , 0);
   return (
     <div className="rightMenu">
       <div className="menuCartWrapper">
@@ -12,7 +15,7 @@ const RightMenu = () => {
             <BiCartAlt size={100} className="cartBlockIcon" />
           </NavLink>
           <span className="menuOffer">
-            <p>0 ₽</p>
+            <p>{totalPrice} ₽</p>
           </span>
           <span className="menuOfferPrice"></span>
         </div>

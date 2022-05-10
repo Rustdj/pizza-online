@@ -1,8 +1,14 @@
 import classes from "../pizza/pizza.module.css";
-
+import { useDispatch } from "react-redux"; 
 import React from "react";
+import { setItemsInCart } from "../../redux/cart/reducer";
 
 const SaladsList = ({ image, title, text, price, button }) => {
+  const item = {title, text, price, button, image}
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(setItemsInCart(item))
+  }
   return (
     <div>
       <div className="">
@@ -13,7 +19,7 @@ const SaladsList = ({ image, title, text, price, button }) => {
             <p>{text}</p>
             <div className={classes.buttons}>
               <div>{price}</div>
-              <button>{button}</button>
+              <button onClick={handleClick}>{button}</button>
             </div>
           </div>
         </div>

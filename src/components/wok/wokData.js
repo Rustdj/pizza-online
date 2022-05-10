@@ -4,7 +4,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1605700681747-285x198.jpeg",
       title: "Удон с морепродуктами 380гр",
       text: "Лапша удон, коктейль из морепродуктов..",
-      price: "1700 ₽",
+      price: 1700,
       button: "Хочу!",
     },
     {
@@ -12,7 +12,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1640359115196-285x198.jpeg",
       title: "Удон с овощами и фучжу 280 гр",
       text: "Лапша рамен, спаржа, морковь..",
-      price: "900 ₽",
+      price: 900,
       button: "Хочу!",
     },
     {
@@ -20,7 +20,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1615978213119-285x198.jpeg",
       title: "Рис с морепродуктами 350 гр",
       text: "Рис, коктейль из морепродуктов, болгарский перец..",
-      price: "1750 ₽",
+      price: 1750,
       button: "Хочу!",
     },
     {
@@ -28,7 +28,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1605087279890-285x198.jpeg",
       title: "Удон с темпе и соусом терияки 280 гр`",
       text: "Лапша удон, соевый темпе, морковь..",
-      price: "900 ₽",
+      price: 900,
       button: "Хочу!",
     },
     {
@@ -36,7 +36,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1621591622503-285x198.jpeg",
       title: "Тепан с цыпленком 330 гр",
       text: "Цыпленок, рис, шампиньоны, горох лопатка..",
-      price: "750 ₽",
+      price: 750,
       button: "Хочу!",
     },
     {
@@ -44,7 +44,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1615533529669-285x198.jpeg",
       title: "Удон с курицей терияки 290 гр",
       text: "Лапша удон, куриное филе, болгарский перец..",
-      price: "1050 ₽",
+      price: 1050,
       button: "Хочу!",
     },
     {
@@ -52,7 +52,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1641905333540-285x198.jpeg",
       title: "Рис с говядиной 340 гр",
       text: "Рис, говядина маринованная, болгарский перец..",
-      price: "550 ₽",
+      price: 550,
       button: "Хочу!",
     },
     {
@@ -60,7 +60,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1641905333540-285x198.jpeg",
       title: "Рис с курицей терияки 360 гр",
       text: "Рис, куриное филе, болгарский перец..",
-      price: "550 ₽",
+      price: 550,
       button: "Хочу!",
     },
     {
@@ -68,7 +68,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1641905333540-285x198.jpeg",
       title: "Удон с говядиной 300 гр",
       text: "Лапша удон, говядина маринованная..",
-      price: "550 ₽",
+      price: 550,
       button: "Хочу!",
     },
     {
@@ -76,7 +76,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1641905333540-285x198.jpeg",
       title: "Удон с овощами 300 гр",
       text: "Лапша удон, болгарский перец..",
-      price: "550 ₽",
+      price: 550,
       button: "Хочу!",
     },
     {
@@ -84,7 +84,7 @@ export const wokData = [
       image: "https://c.ollis.ru/1641905333540-285x198.jpeg",
       title: "Соевый соус 40 гр",
       text: "Соевый соус",
-      price: "50 ₽",
+      price: 50,
       button: "Хочу!",
     },
   ];

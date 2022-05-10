@@ -4,7 +4,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi1.jpeg"),
         title: "Суши запеченные с лососем, 2 шт. 86 гр",
         text: "Лосось, Спайси соус, сырный соус..",
-        price: "640 ₽",
+        price: 640,
         button: "Хочу!",
     },
     {
@@ -12,7 +12,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi2.jpeg"),
         title: "Суши с угрём, 2шт. 56 гр",
         text: "Угорь, рис, нори, соус унаги, кунжут",
-        price: "600 ₽",
+        price: 600,
         button: "Хочу!",
     },
     { 
@@ -20,7 +20,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi3.jpeg"),
         title: "Суши с лососем, 2 шт.",
         text: "Лосось, японский рис",
-        price: "750 ₽",
+        price: 750,
         button: "Хочу!",
     },
     {
@@ -28,7 +28,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi4.jpeg"),
         title: "Суши с чукой, 2шт. 56 гр",
         text: "Чука, рис, нори",
-        price: "900 ₽",
+        price: 900,
         button: "Хочу!",
     },
     {
@@ -36,7 +36,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi5.jpeg"),
         title: "Суши с тигровой креветкой, 2шт. 62 гр",
         text: "Креветка, рис.",
-        price: "650 ₽",
+        price: 650,
         button: "Хочу!",
     },
     {
@@ -44,7 +44,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi6.jpeg"),
         title: "Суши запеченные с крабом и креветкой, 2 шт.",
         text: "Смесь со снежным крабом и тигровыми креветками",
-        price: "1250 ₽",
+        price: 1250,
         button: "Хочу!",
     },
     {
@@ -52,7 +52,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi7.jpeg"),
         title: "Суши с угрём, 2шт. 56 гр",
         text: "Угорь, рис, нори, соус унаги, кунжут",
-        price: "750 ₽",
+        price: 750,
         button: "Хочу!",
     },
     {
@@ -60,7 +60,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi8.jpeg"),
         title: "Суши с лососем, 2 шт. 68 гр",
         text: "Лосось, японский рис",
-        price: "850 ₽",
+        price: 850,
         button: "Хочу!",
     },
     {
@@ -68,7 +68,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi9.jpeg"),
         title: "Суши с тунцом, 2шт. 56 гр",
         text: "Тунец, рис",
-        price: "950 ₽",
+        price: 950,
         button: "Хочу!",
     },
     {
@@ -76,7 +76,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi10.jpeg"),
         title: "Суши запеченные с угрем, 2 шт. 86 гр",
         text: "Угорь, Спайси соус, сырный соус, Унаги соус, кунжут",
-        price: "790 ₽",
+        price: 790,
         button: "Хочу!",
     },
     {
@@ -84,7 +84,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi11.jpeg"),
         title: "Суши острые с крабом и креветкой, 2 шт. 80 гр",
         text: "Смесь со снежным крабом и тигровыми креветками",
-        price: "790 ₽",
+        price: 790,
         button: "Хочу!",
     },
     {
@@ -92,7 +92,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi12.jpeg"),
         title: "Суши острые с лососем + Суши острые с крабом и креветкой80 гр",
         text: "Суши острые с лососем + Суши острые..",
-        price: "790 ₽",
+        price: 790,
         button: "Хочу!",
     },
     {
@@ -100,7 +100,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi13.jpeg"),
         title: "Суши острые с лососем, 2 шт. 80 гр",
         text: "Лосось, Спайси соус",
-        price: "790 ₽",
+        price: 790,
         button: "Хочу!",
     },
     {
@@ -108,7 +108,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi14.jpeg"),
         title: "Суши острые с угрем, 2 шт. 80 гр",
         text: "Угорь, Спайси соус",
-        price: "790 ₽",
+        price: 790,
         button: "Хочу!",
     },
     {
@@ -116,7 +116,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi15.jpeg"),
         title: "Имбирь+васаби 31 гр",
         text: "Имбирь+васаби",
-        price: "90 ₽",
+        price: 90,
         button: "Хочу!",
     },
     {
@@ -124,7 +124,7 @@ export const SushiData = [
         image: require("../../img/sushi/sushi16.jpeg"),
         title: "Спайси соус 60 гр",
         text: "Майонез, соус Ширачи, икра Масаго..",
-        price: "50 ₽",
+        price: 50,
         button: "Хочу!",
     },
 ]

@@ -13,7 +13,7 @@
 }
 
 .menuCartWrapper {
-    position: relative;
+    position: fixed;
     display: grid;
     grid-template-columns: 230px;
     grid-template-rows: repeat(2, 200px);

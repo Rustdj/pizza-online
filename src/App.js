@@ -2,6 +2,7 @@ import './App.css';
 import './index.css';
 import './components/content/slider/slider.css';
 import { Routes, Route } from 'react-router-dom';
+import { Provider } from'react-redux';
 import Sidebar from './components/sidebar/sidebar';
 import RightMenu from './components/rightMenu/rightMenu';
 import Content from './components/content/content'; 
@@ -17,17 +18,13 @@ import Sales from './components/sales/sales';
 import Cart from './components/cart/cart';
 import {PizzaData} from './components/pizza/pizzaData';
 import WokMain from './components/wok/wokMain';
-
-
-
-
+import { store } from './redux';
 
 function App() {
-
-  return (
-    
+  return ( 
     <>
         <div className="wrapper"> 
+        <Provider store={store}>
                   <Routes>
                       <Route path='/' element={<Content/>} />
                         <Route path='/set' element={<SetSushi/>} />
@@ -43,7 +40,8 @@ function App() {
                       <Route path='/cart' element={<Cart/>} />
                   </Routes>       
               <RightMenu/>
-            <Sidebar/>          
+            <Sidebar/> 
+          </Provider>         
         </div>
     </> 
   );
