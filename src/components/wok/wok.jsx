@@ -1,7 +1,15 @@
 import React from "react";
-import '../content/set/set.css';
+import { useDispatch } from "react-redux";
+import { setItemsInCart } from "../../redux/cart/reducer";
+import "../content/set/set.css";
 
 const Wok = ({ image, title, text, price, button }) => {
+  const item = { title, text, price, button, image };
+  const dispatch = useDispatch();
+  const handleClick = (e) => {
+    e.stopPropagation();
+    dispatch(setItemsInCart(item));
+  };
   return (
     <>
       <img src={image} alt="set" />
@@ -9,7 +17,7 @@ const Wok = ({ image, title, text, price, button }) => {
       <p>{text}</p>
       <div className="summ">
         <div>{price}</div>
-        <button>{button}</button>
+        <button onClick={handleClick}>{button}</button>
       </div>
     </>
   );

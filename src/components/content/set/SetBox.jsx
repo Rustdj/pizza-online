@@ -2,7 +2,7 @@ import React from "react";
 import "./set.css";
 import logoSet from "../../../img/logo/seti.svg";
 import { setData } from "./SetData";
-import Set from "./Set";
+import Set from "./set.jsx";
 
 const SetBox = () => {
   const setDataBase = setData.map((elem) => {

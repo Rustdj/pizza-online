@@ -1,8 +1,15 @@
-import React, { useState } from "react";
-import './set.css';
+import React from "react";
+import "./set.css";
+import { useDispatch } from "react-redux";
+import { setItemsInCart } from "../../../redux/cart/reducer"
 
 export default function Set({ image, title, text, price, button }) {
-  
+  const item = { image, title, text, price, button };
+  const dispatch = useDispatch();
+  const handleClick = (e) => {
+    e.stopPropagation();
+    dispatch(setItemsInCart(item));
+  };
   return (
     <>
       <img src={image} alt="set" />
@@ -10,7 +17,7 @@ export default function Set({ image, title, text, price, button }) {
       <p>{text}</p>
       <div className="summ">
         <div>{price}</div>
-        <button>{button}</button>
+        <button onClick={handleClick}>{button}</button>
       </div>
     </>
   );
