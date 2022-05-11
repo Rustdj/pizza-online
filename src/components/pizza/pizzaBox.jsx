@@ -1,7 +1,9 @@
 import React from "react";
-import classes from "./pizza.module.css";
 import { useDispatch } from 'react-redux';
 import { setItemsInCart } from "../../redux/cart/reducer";
+import { useNavigate } from 'react-router-dom';
+import classes from "./pizza.module.css";
+import { setCurrentItem } from "../../redux/product-cart/reducer";
 
 const PizzaBox = ({ title, text, price, button, image }) => {
 const item = {title, text, price, button, image}
@@ -9,10 +11,18 @@ const dispatch = useDispatch();
 const handleClick = () => {
   dispatch(setItemsInCart(item))
 }
+
+const history = useNavigate()
+const onDispatch = useDispatch()
+
+const toggleClick = () => {
+  onDispatch(setCurrentItem(item))
+  history(`/app/${title}`)
+}
   
   return (
     <>
-      <img src={image} alt="sushi1" />
+      <img src={image} alt="sushi1" onClick={toggleClick}/>
       <h4>{title}</h4>
       <p>{text}</p>
       <div className={classes.buttons}>

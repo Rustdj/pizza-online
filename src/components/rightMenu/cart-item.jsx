@@ -12,6 +12,7 @@ export const CartItem = ({
         <span>{title}</span>
         <div className="cart-item__price">
             <span>{price} руб.</span>
+            <span> {id}X</span>
         </div>
     </div>
   )

@@ -19,6 +19,7 @@ import Cart from './components/cart/cart';
 import {PizzaData} from './components/pizza/pizzaData';
 import WokMain from './components/wok/wokMain';
 import { store } from './redux';
+import { CartPage } from './components/cart-page/cart-page';
 
 function App() {
   return ( 
@@ -31,6 +32,7 @@ function App() {
                           <Route path='/pizza' element={<Pizza PizzaData={PizzaData}/>} />
                               <Route path='/wok' element={<WokMain/>} />
                                 <Route path='/roll' element={<Roll/>} />
+                                <Route path='/app:title' element={<CartPage />} />
                                   <Route path='/sushi' element={<Sushi/>} />
                                 <Route path='/salads' element={<Salads/>} />
                               <Route path='/soup' element={<Soup/>} />
