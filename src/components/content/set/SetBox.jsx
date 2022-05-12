@@ -24,9 +24,7 @@ const SetBox = () => {
         <img src={logoSet} alt="set" />
         <h2>Сеты</h2>
       </div>
-        <div className="setItems">
-          {setDataBase}
-        </div>
+      <div className="setItems">{setDataBase}</div>
     </div>
   );
 };

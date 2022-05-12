@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setItemsInCart } from '../../redux/cart/reducer';
+import { setCurrentItem } from '../../redux/product-cart/reducer';
+import { useNavigate } from "react-router-dom";
 import classes from '../pizza/pizza.module.css';
 
 export default function SushiBox({ title, text, price, button, image }) {
@@ -10,9 +12,17 @@ export default function SushiBox({ title, text, price, button, image }) {
     e.stopPropagation();
     dispatch(setItemsInCart(item));
   };
+
+  const history = useNavigate();
+  const onDispatch = useDispatch();
+
+  const toggleClick = () => {
+    onDispatch(setCurrentItem(item));
+    history(`/app${item.title}`);
+  };
   return (
     <>
-        <img src={image} alt="sushi" />
+        <img src={image} alt="sushi" onClick={toggleClick}/>
           <h4>{title}</h4>
           <p>{text}</p>
           <div className={classes.buttons}>

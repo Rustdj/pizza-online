@@ -6,6 +6,8 @@ import classes from "./pizza.module.css";
 import PizzaBox from "./pizzaBox";
 import logo from "../../img/logo/pizza.svg";
 import { PizzaData } from "./pizzaData";
+import { CartPage } from "../cart-page/cart-page";
+
 
 const Pizza = () => {
   const dataBase = PizzaData.map((elem) => {
@@ -21,8 +23,10 @@ const Pizza = () => {
       </div>
     );
   });
+  
   return (
     <div>
+      
       <Header />
       <div className={classes.name}>
         <img src={logo} alt="SushiLogo" />

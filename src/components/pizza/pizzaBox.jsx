@@ -17,7 +17,7 @@ const onDispatch = useDispatch()
 
 const toggleClick = () => {
   onDispatch(setCurrentItem(item))
-  history(`/app/${title}`)
+  history(`/app${item.title}`)
 }
   
   return (
